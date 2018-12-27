@@ -1,0 +1,17 @@
+<p>Please vote in some food you like:</p>
+<form action='cast' method='post'>
+  <ul class='unstyled' style="list-style-type: none;">
+    <% Choices.each do |id, text| %>
+      <li>
+        <label class='radio'>
+          <input type='radio' name='vote' value='<%= id %>' id='vote_<%= id %>' />
+          <%= text %>
+        </label>
+      </li>
+    <% end %>
+  </ul>
+  <div class="text-center">
+    <button type='submit' class='btn btn-primary'>Cast this vote!</button>
+    <a href="/results" class='btn btn-success'>Results</a>
+  </div>
+</form>

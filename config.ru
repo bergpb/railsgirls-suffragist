@@ -1,0 +1,3 @@
+require './suffragist'
+
+run Suffragist

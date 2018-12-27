@@ -1,0 +1,5 @@
+<h3>Welcome to Suffragist!</h3>
+<p>Hello!, please find one question...</p>
+<% Votes.each do |link, name| %>
+  <a href="<%= link %>" class="btn btn-primary btn-block"><%= name %></a>
+<% end %>
